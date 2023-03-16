@@ -19,6 +19,12 @@ h1, h2, h3, p, ul {
   margin: 0;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -29,6 +35,10 @@ h1, h2, h3, p, ul {
   background-color: greenyellow; */
 }
 
+.header {
+   border-bottom: 1px solid var(--light-color-text-logo);
+}
+
 .list {
   list-style: none;
 }
@@ -36,7 +46,6 @@ h1, h2, h3, p, ul {
 .container-header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--light-color-text-logo);
 }
 
 .main-nav {
@@ -108,7 +117,8 @@ h1, h2, h3, p, ul {
 }
 
 .hero {
-margin-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 
   text-align: center;
   background-color: var(--title-text-color);
@@ -149,7 +159,8 @@ margin-bottom: 120px;
 }
 
 .benefits {
-margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .benefits-list {
@@ -210,7 +221,7 @@ margin-bottom: 120px;
 }
 
 .examples {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .section-title-team {
@@ -219,6 +230,7 @@ margin-bottom: 120px;
 
 .container-team {
   display: flex;
+
 }
 
 .container-team .item {
@@ -235,10 +247,15 @@ margin-bottom: 120px;
   padding-bottom: 120px;
 
   background-color: var(--second-background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.foto {
-  margin-bottom: 32px;
+.team-text {
+ padding-top: 32px;
+ padding-bottom: 32px;
+
+ background-color: var(--white-text-color);
+ text-align: center;
 }
 
 .footer {
@@ -266,11 +283,15 @@ margin-bottom: 120px;
 
 /* Портфоліо */
 
+.main-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .filter {
   display: flex;
   justify-content: center;
-  margin-top: 96px;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 
   list-style: none;
 }
@@ -314,20 +335,19 @@ margin-bottom: 120px;
   padding-left: 16px;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  border: 1px solid var(--light-color-text-logo);
 }
 
 .work-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 120px;
 }
 
 .work-list .item {
   width: calc((100% - 48px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
-
-  border: 1px solid var(--light-color-text-logo);
 }
 
 .work-list .item:nth-child(3n) {
